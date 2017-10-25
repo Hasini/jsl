@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4">
+  <display-name>MyWebApp</display-name>
+  <servlet>
+    <servlet-name>test</servlet-name>
+    <servlet-class>com.bit.jsl.TestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>test</servlet-name>
+    <url-pattern>/test/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CustomerDetailsServlet</display-name>
+    <servlet-name>CustomerDetailsServlet</servlet-name>
+    <servlet-class>pro.bit.jsl.customer.CustomerDetailsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CustomerDetailsServlet</servlet-name>
+    <url-pattern>/CustomerDetailsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UserRegistrationServlet</display-name>
+    <servlet-name>UserRegistrationServlet</servlet-name>
+    <servlet-class>com.jsl.main.UserRegistrationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserRegistrationServlet</servlet-name>
+    <url-pattern>/UserRegistrationServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
